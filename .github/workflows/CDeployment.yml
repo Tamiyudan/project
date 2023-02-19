@@ -53,17 +53,17 @@ jobs:
           git clone "${{ env.helm_repository }}"
         
 
-      # # Get k8s credentials
-      # - name: Get k8s credentials
-      #   run: |
-      #     gcloud container clusters get-credentials "${{ env.cluster_name }}" --region  "${{ env.region }}"
-      #     kubectl get nodes
+      # Get k8s credentials
+      - name: Get k8s credentials
+        run: |
+          gcloud container clusters get-credentials "${{ env.cluster_name }}" --region  "${{ env.region }}"
+          kubectl get nodes
 
       
-      # - name: Configure Backend
-      #   working-directory: "custom_helm_chart"
-      #   run: |
-      #     bash setenv.sh
+      - name: Configure Backend
+        working-directory: "custom_helm_chart"
+        run: |
+          bash setenv.sh
 
       - name: Initialize
         working-directory: "custom_helm_chart"
