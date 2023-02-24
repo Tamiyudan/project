@@ -1,8 +1,0 @@
-.terraform.lock.hcl
-.terraform.tfstate.lock.info
-.terraform
-terraform.tfstate*
-
-0.account_setup/configurations.tfvars
-backend.tf
-login.sh
