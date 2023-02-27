@@ -52,8 +52,8 @@ jobs:
         uses: warchant/setup-sonar-scanner@v3
 
       - name: Run sonarqube
-        # if: ${{env.enable_sonar == 'true'}}
-        # run: sonar-scanner
+        if: ${{env.enable_sonar == 'true'}}
+        run: sonar-scanner
         #     -Dsonar.organization=${{ env.sonar_organization }}                              
         #     -Dsonar.projectKey=${{ env.sonar_projectKey }}                         
         #     -Dsonar.login=${{ env.sonar_login }}                                   
