@@ -54,7 +54,7 @@ jobs:
       - name: Run sonarqube
         if: ${{env.enable_sonar == 'true'}}
         run: sonar-scanner
-        #     -Dsonar.organization=${{ env.sonar_organization }}                              
+            -Dsonar.organization=${{ env.sonar_organization }}                              
         #     -Dsonar.projectKey=${{ env.sonar_projectKey }}                         
         #     -Dsonar.login=${{ env.sonar_login }}                                   
         #     -Dsonar.sources=artemis/
