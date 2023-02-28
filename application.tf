@@ -1,4 +1,4 @@
-module "application" {
+module "artemis" {
   source               = "./terraform-helm-local"
   deployment_name      = "application"
   deployment_namespace = "artemis"

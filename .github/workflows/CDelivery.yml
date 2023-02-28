@@ -8,10 +8,10 @@ env:
 
   # Sonar stuff, please update accordingly
   enable_sonar:    "true"
-  sonar_organization: "Tamiyudan "
+  sonar_organization: "tamiyudan "
   sonar_projectKey: "Tamiyudan_Team1-project"
   sonar_login:  ${{ secrets.SONAR_TOKEN }} 
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+  #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
 
 
 
