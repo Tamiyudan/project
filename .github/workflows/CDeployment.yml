@@ -1,6 +1,6 @@
 env:
   region:             "us-central1"
-  app_name:           "artemis"
+  app_name:           "application"
   app_version:        ${GITHUB_SHA}
   app_port:           "5000"
   project_id:         "${{ secrets.PROJECT_ID }}"
